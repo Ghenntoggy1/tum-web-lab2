@@ -23,7 +23,7 @@ body {
   background: linear-gradient(50deg, rgba(8,70,156,1) 0%, rgba(4,128,240,1) 51%, rgba(8,70,156,1) 100%);
   padding: 0 20px;
   z-index: 1000;
-  border-bottom: 2px solid #003366; /* Add this line */
+  border-bottom: 2px solid #003366;
 }
 
 .topnav .logo {
@@ -257,6 +257,4 @@ body {
   .row .single-feature {
     max-width: 100%;
   }
-
-  
 }
