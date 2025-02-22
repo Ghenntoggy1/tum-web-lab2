@@ -375,6 +375,112 @@ body {
         font-style: italic;
       }
 
+.contact {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(39,167,255);
+background: radial-gradient(circle, rgba(39,167,255,1) 0%, rgba(125,189,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.contact-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact .contact-form {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+  .contact .contact-form h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact .contact-form p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .contact .contact-form .fields {
+    margin-bottom: 20px;
+  }
+
+  .contact .contact-form .fields p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 8px;
+  }
+
+  .contact .contact-form .fields input[type="text"],
+  .contact .contact-form .fields input[type="email"] {
+    caret-color: #007bff;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+
+  .contact .contact-form .fields input[type="text"]:focus,
+  .contact .contact-form .fields input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  .contact .contact-form .fields .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact .contact-form .fields .checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #007bff;
+  }
+  
+  .contact .contact-form .fields .checkbox label p {
+    font-size: 14px;
+    color: #444;
+    margin: 0;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+
 @media (max-width: 1024px) {
   .product-demo {
     padding: 20px 20px;
