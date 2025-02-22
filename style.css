@@ -263,11 +263,11 @@ body {
         flex-direction: column;
         padding: 10px 10px;
         width: 250px;
-        border: 1px solid black;
         border-radius: 10px;
         background-color: #0F67B1;
         margin: 10px 0;
         transform: translateX(0);
+        transition: transform 0.3s, box-shadow 0.3s;
       }
 
         .social-proof .social-brief .social-rank .social-rank-item:nth-child(1) {
@@ -281,6 +281,22 @@ body {
         .social-proof .social-brief .social-rank .social-rank-item:nth-child(3) {
           transform: translateX(2vw);
         }
+        
+        .social-proof .social-brief .social-rank .social-rank-item:hover {
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+          .social-proof .social-brief .social-rank .social-rank-item:nth-child(1):hover {
+            transform: translateX(0vw) translateY(-10px);
+          }
+
+          .social-proof .social-brief .social-rank .social-rank-item:nth-child(2):hover {
+            transform: translateX(1vw) translateY(-10px);
+          }
+
+          .social-proof .social-brief .social-rank .social-rank-item:nth-child(3):hover {
+            transform: translateX(2vw) translateY(-10px);
+          }
 
         .social-proof .social-brief .social-rank .social-rank-item p {
           font-size: 24px;
@@ -292,6 +308,54 @@ body {
           font-size: 24px;
           color: gold;
         }
+
+    .social-proof .social-proof-tesimonials {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      max-width: 80%;
+      margin: 0 auto;
+      gap: 20px;
+    }
+        
+    .social-proof .social-proof-tesimonial {
+      background: rgb(44,113,209);
+      background: linear-gradient(90deg, rgba(44,113,209,1) 0%, rgba(76,166,249,1) 50%, rgba(99,156,235,1) 100%);
+      max-width: 80%;
+      width: 600px;
+      border-radius: 15px;
+      padding: 16px;
+      margin: 16px 0;
+    }
+    
+      .social-proof .social-proof-tesimonial .upper-proof {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 10px;
+      }
+
+      .social-proof .social-proof-tesimonial .upper-proof .upper-proof-text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .social-proof .social-proof-tesimonial img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      
+      .social-proof .social-proof-tesimonial span {
+        font-size: 24px;
+      }
+
+      .social-proof .social-proof-tesimonial p {
+        font-size: 20px;
+        font-style: italic;
+      }
 
 @media (max-width: 1024px) {
   .product-demo {
@@ -426,6 +490,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    gap: 0px;
   }
 
     .social-proof .social-brief .social-rank .social-rank-item {
@@ -451,6 +516,22 @@ body {
         transform: translateX(8vw);
       }
 
+      .social-proof .social-brief .social-rank .social-rank-item:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+        .social-proof .social-brief .social-rank .social-rank-item:nth-child(1):hover {
+          transform: translateX(3vw) translateY(-10px);
+        }
+
+        .social-proof .social-brief .social-rank .social-rank-item:nth-child(2):hover {
+          transform: translateX(-5vw) translateY(-10px);
+        }
+
+        .social-proof .social-brief .social-rank .social-rank-item:nth-child(3):hover {
+          transform: translateX(8vw) translateY(-10px);
+        }
+
       .social-proof .social-brief .social-rank .social-rank-item p {
         font-size: 20px;
         margin-bottom: 5px;
@@ -460,5 +541,14 @@ body {
       .social-proof .social-brief .social-rank .social-rank-item span {
         font-size:20px;
         color: gold;
+      }
+
+      .social-proof .social-proof-tesimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+        gap: 0px;
       }
 }
