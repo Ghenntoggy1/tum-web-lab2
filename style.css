@@ -380,30 +380,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(39,167,255);
-background: radial-gradient(circle, rgba(39,167,255,1) 0%, rgba(125,189,255,1) 50%, rgba(255,255,255,1) 100%);
-}
-
-.contact-form {
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
+  background: rgb(33,116,232);
+  background: linear-gradient(0deg, rgba(33,116,232,1) 0%, rgba(71,147,255,1) 25%, rgba(95,161,255,1) 50%, rgba(154,196,255,1) 75%, rgba(255,255,255,1) 100%);
 }
 
 .contact .contact-form {
   background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 40px;
   max-width: 500px;
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
   .contact .contact-form h1 {
@@ -420,7 +408,7 @@ background: radial-gradient(circle, rgba(39,167,255,1) 0%, rgba(125,189,255,1) 5
     text-align: center;
   }
 
-  .contact .contact-form .fields {
+  .contact .contact-form .fields div {
     margin-bottom: 20px;
   }
 
@@ -675,4 +663,29 @@ background: radial-gradient(circle, rgba(39,167,255,1) 0%, rgba(125,189,255,1) 5
         margin: 0 auto;
         gap: 0px;
       }
+  .contact .contact-form h1 {
+    font-size: 28px;
+  }
+
+  .contact .contact-form p {
+    font-size: 20px;
+  }
+
+  .contact .contact-form .fields p {
+    font-size: 18px;
+  }
+
+  .contact .contact-form .fields input[type="text"],
+  .contact .contact-form .fields input[type="email"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .contact .contact-form .fields checkbox label p {
+    font-size: 18px;
+  }
+
+  .contact .contact-form button {
+    font-size: 16px;
+  }
 }
