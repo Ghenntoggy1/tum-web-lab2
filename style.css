@@ -432,11 +432,24 @@ body {
       display: flex;
       flex-direction: column;
       width: 100%;
+      min-width: 200px;
       border: 1px solid black;
       border-radius: 10px;
       background-color: #0F67B1;
       margin: 10px 0;
     }
+
+      .social-proof .social-brief .social-rank .social-rank-item:nth-child(1) {
+        transform: translateX(3vw);
+      }
+
+      .social-proof .social-brief .social-rank .social-rank-item:nth-child(2) {
+        transform: translateX(-5vw);
+      }
+
+      .social-proof .social-brief .social-rank .social-rank-item:nth-child(3) {
+        transform: translateX(8vw);
+      }
 
       .social-proof .social-brief .social-rank .social-rank-item p {
         font-size: 20px;
