@@ -2,6 +2,7 @@
   box-sizing: border-box;
   caret-color: transparent;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -109,6 +110,7 @@ body {
   color: white;
   border: none;
   padding: 15px 30px;
+  border-radius: 12px;
   font-size: 18px;
   cursor: pointer;
   transition: 0.3s;
@@ -220,6 +222,22 @@ body {
   .product-demo .demo-functionality .description p {
     font-size: 24px;
     line-height: 28px;
+  }
+
+  .product-demo .demo-functionality .description button {
+    background-color: #1F509A;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin-top: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .product-demo .demo-functionality .description button:hover {
+    background-color: #2966c3;
   }
 
   .product-demo .demo-functionality .demo-image img {
