@@ -228,6 +228,71 @@ body {
     border-radius: 15px;
   }
 
+.social-proof {
+  max-width: 100%;
+}
+
+  .social-proof .social-brief {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0px auto;
+    align-items: center;
+    gap: 50px;
+  }
+
+    .social-proof .social-brief .social-text h1 {
+      font-size: 36px;
+      padding-bottom: 10px;
+    }
+
+    .social-proof .social-brief .social-text p {
+      font-size: 24px;
+      padding-bottom: 10px;
+    }
+
+    .social-proof .social-brief .social-rank {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+      .social-proof .social-brief .social-rank .social-rank-item {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        width: 250px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #0F67B1;
+        margin: 10px 0;
+        transform: translateX(0);
+      }
+
+        .social-proof .social-brief .social-rank .social-rank-item:nth-child(1) {
+          transform: translateX(0vw);
+        }
+
+        .social-proof .social-brief .social-rank .social-rank-item:nth-child(2) {
+          transform: translateX(1vw);
+        }
+
+        .social-proof .social-brief .social-rank .social-rank-item:nth-child(3) {
+          transform: translateX(2vw);
+        }
+
+        .social-proof .social-brief .social-rank .social-rank-item p {
+          font-size: 24px;
+          margin-bottom: 5px;
+          color: white;
+        }
+
+        .social-proof .social-brief .social-rank .social-rank-item span {
+          font-size: 24px;
+          color: gold;
+        }
+
 @media (max-width: 1024px) {
   .product-demo {
     padding: 20px 20px;
@@ -356,4 +421,31 @@ body {
   .product-demo .demo-functionality .demo-image img {
     max-width: 100%;
   }
+
+  .social-proof .social-brief {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+    .social-proof .social-brief .social-rank .social-rank-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border: 1px solid black;
+      border-radius: 10px;
+      background-color: #0F67B1;
+      margin: 10px 0;
+    }
+
+      .social-proof .social-brief .social-rank .social-rank-item p {
+        font-size: 20px;
+        margin-bottom: 5px;
+        color: white;
+      }
+
+      .social-proof .social-brief .social-rank .social-rank-item span {
+        font-size:20px;
+        color: gold;
+      }
 }
