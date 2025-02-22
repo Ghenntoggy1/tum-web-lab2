@@ -192,13 +192,26 @@ body {
     position: fixed;
     left: 0;
     top: 50px;
-  }
+}
 
-  .topnav .nav-links button {
+.topnav .nav-links button {
     width: 100%;
     background-color: #0F67B1;
     justify-items: end;
-  }
+    position: relative;
+    padding: 10px 0;
+}
+
+.topnav .nav-links button:not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
 
   .dropdown-btn {
     display: block;
