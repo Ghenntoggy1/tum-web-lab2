@@ -758,4 +758,23 @@ body {
   .contact .contact-form button {
     font-size: 16px;
   }
+
+  .mascot-doctor {
+    width: 70px;
+    bottom: 15px;
+    right: 10px;
+  }
+    .mascot-doctor img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      background-color: #ddd;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .mascot-doctor:hover::before {
+        content: none;
+        transform: translateX(-50%);
+    }
 }
