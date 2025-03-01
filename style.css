@@ -483,6 +483,31 @@ body {
     background-color: #1F509A;
   }
 
+  .mascot-doctor {
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    width: 100px;
+    height: auto;
+    opacity: 0;
+    animation: showMascot 1s ease-in-out 5s forwards;
+  }
+
+  @keyframes showMascot {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .mascot-doctor img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+  }
+
 @media (max-width: 1024px) {
   .product-demo {
     padding: 20px 20px;
