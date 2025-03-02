@@ -490,14 +490,46 @@ body {
     width: 80px;
     height: auto;
     opacity: 0;
-    animation: showMascot 1s ease-in-out 5s forwards;
+    animation: showMascot 1s ease-in-out 5s forwards, 
+               jumpMascot 1.5s ease-in-out 6s infinite;
     cursor: pointer;
     transition: transform 0.3s ease;
     z-index: 1000;
-}
+  }
+
+  @keyframes jumpMascot {
+    0%, 100% { 
+      transform: translateY(0); 
+    }
+    10% { 
+      transform: translateY(-30px); 
+    }
+    20% { 
+      transform: translateY(0); 
+    }
+    30% { 
+      transform: translateY(-20px); 
+    }
+    40% { 
+      transform: translateY(0); 
+    }
+    50% { 
+      transform: translateY(-10px); 
+    }
+    60% { 
+      transform: translateY(0); 
+    }
+  }
 
 .mascot-doctor:hover {
+    animation-play-state: paused;
+    animation: showMascot 1s ease-in-out 5s forwards;
     transform: scale(1.1);
+}
+
+.mascot-doctor:hover::after {
+  animation-play-state: running;
+  animation: jumpMascot 1.5s ease-in-out 1s infinite;
 }
 
 .mascot-doctor:hover::before {
