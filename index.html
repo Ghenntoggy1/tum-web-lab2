@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-color fixed-top border-bottom border-2 border-black pb-0 pt-0">
       <div class="container-fluid ps-lg-2 pe-lg-2 ps-0 pe-0">
         <!-- Navbar Logo -->
-        <a class="navbar-brand text-white pb-3 pt-3 ms-lg-5 ms-3" href="#">MedRec</a>
+        <a class="navbar-brand text-white pb-3 pt-3 ms-lg-5 ms-3 fs-4" href="#">MedRec</a>
         <!-- Menu Dropdown Button -->
         <button class="navbar-toggler custom-toggler ms-auto me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,32 +28,34 @@
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link text-white text-center" href="#overview">Overview</a>
-            <a class="nav-link text-white text-center" href="#features">Features</a>
-            <a class="nav-link text-white text-center" href="#proof">Testimonials</a>
-            <a class="nav-link text-white text-center" href="#contact">Try for Free</a>
+            <a class="nav-link text-white text-center fs-5" href="#overview">Overview</a>
+            <a class="nav-link text-white text-center fs-5" href="#features">Features</a>
+            <a class="nav-link text-white text-center fs-5" href="#proof">Testimonials</a>
+            <a class="nav-link text-white text-center fs-5" href="#contact">Try for Free</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <!-- Hero -->
-    <div class="hero">
-      <div class="hero-text">
-        <h1>Manage your Medical Records</h1>
-        <p>MedRec is a secure platform for managing your healthcare records online.</p>
-        <form action="#contact">
-          <button href="#contact">Get Started</button>
-        </form>
-      </div>
-      <div class="hero-image">
-        <img src="public/images/hero_image.png" alt="Hero Image" />
+    <!-- New Hero using Bootstrap -->
+    <div class="container-fluid hero pt-5">
+      <div class="row px-lg-5 px-0 pb-lg-4 pb-0 pt-5 align-items-center justify-content-between d-flex gap-lg-0 gap-md-0 gap-4">
+        <div class="col-md-7 col-lg-7 text-white text-center text-md-start">
+            <h1 class="mb-3 mt-5">Manage your Medical Records</h1>
+            <p class="lead mb-4">MedRec is a secure platform for managing your healthcare records online.</p>
+            <form action="#contact">
+              <a href="#contact" class="btn btn-primary border-0 px-5 py-3" >Get Started</a>
+            </form>
+        </div>
+        <div class="col-md-5 col-lg-5 px-0 align-items-center">
+            <img class="rounded-md-0 rounded-2 w-100 h-auto hero-image" src="public/images/hero_image.png" alt="Hero Image">
+        </div>
       </div>
     </div>
 
     <!-- Overview -->
-    <section id="overview" class="features">
-      <div class="row w-100">
+    <section id="overview" class="container-fluid features">
+      <div class="row">
         <div class="single-feature">
           <img src="public/images/healthcare.png" alt="Feature Image" />
           <h2>Health Insurance</h2>
