@@ -37,67 +37,29 @@ body {
 
 .nav-link:hover {
   background-color: white !important;
-  color: black !important;
+  color: var(--bg-dark) !important;
 }
 
 .hero {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background: rgb(14,83,164);
   background: linear-gradient(50deg, rgba(14,83,164,1) 0%, rgba(9,128,223,1) 32%, rgba(16,94,189,1) 66%, rgba(0,164,255,1) 100%);
-  padding-top: 50px;
-  gap: 50px;
-}
-
-.hero-text {
-  flex: 1;
-  padding: 50px 100px;
-  max-width: 50%;
 }
 
 .hero h1 {
-  font-size: 48px;
   font-family: "Josefin Sans", serif;
-  margin: 0;
-  color: white;
 }
 
-.hero p {
-  font-size: 24px;
-  margin: 20px 0;
-  color: white;
-}
-
-.hero button {
+.btn-primary {
   background-color: #1F509A;
   color: white;
-  border: none;
-  padding: 15px 30px;
   border-radius: 12px;
   font-size: 18px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.hero button:hover {
+.btn-primary:hover {
   background-color: #ddd;
   color: black;
-}
-
-.hero-image {
-  flex: 1;
-  max-width: 40%;
-  margin: 15px 100px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hero img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
 }
 
 #overview {
@@ -105,7 +67,7 @@ body {
   padding-top: 50px;
 }
 
-.row {
+#overview .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -553,71 +515,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* .topnav .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #003366;
-    position: fixed;
-    left: 0;
-    top: 50px;
-}
-
-.topnav .nav-links button {
-    width: 100%;
-    background-color: #0F67B1;
-    justify-items: end;
-    position: relative;
-    padding: 10px 0;
-}
-
-.topnav .nav-links button:not(:last-child)::after {
-    content: '';
-    display: block;
-    width: 80%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-}
-
-  .dropdown-btn {
-    display: block;
-  }
-
-  .dropdown-toggle:checked ~ .nav-links {
-    display: flex;
-  } */
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .hero-text {
-    max-width: 100%;
-    padding: 30px 20px;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
   .hero-image {
-    max-width: 100%;
-    margin: 0;
-    justify-content: center;
-  }
-
-  .hero img {
-    max-width: 100%;
-    border-radius: 0px;
+    border-radius: 0 !important;
   }
 
   .features-text {
@@ -630,13 +529,13 @@ body {
     font-size: 2rem;
   }
 
-  .row {
+  #overview .row {
     flex-direction: column;
     padding: 1.5rem;
     gap: 20px;
   }
 
-  .row .single-feature {
+  #overview .row .single-feature {
     max-width: 100%;
   }
 
